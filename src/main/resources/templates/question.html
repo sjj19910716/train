@@ -1,0 +1,704 @@
+﻿
+
+
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>教育训练员工评分</title>
+<link href="../question/main.css" rel="stylesheet" type="text/css" />
+<link href="../question/iconfont.css" rel="stylesheet" type="text/css" />
+<link href="../question/test.css" rel="stylesheet" type="text/css" />
+
+<style>
+.hasBeenAnswer {
+	background: #5d9cec;
+	color:#fff;
+}
+
+</style>
+	<script src="../question/jquery-1.11.3.min.js"></script>
+	<script src="../question/js/question.js"></script>
+</head>
+
+<body>
+	<div class="main" >
+		<!--nr start-->
+		<div class="test_main">
+			<div class="nr_left">
+				<div class="test">
+					<!--<form action="" method="post">-->
+						<div class="test_title" align="center">
+							<font><input type="button" name="test_jiaojuan" value="提交" id="tijiao"></font>
+						</div>
+						
+							<div class="test_content">
+								<div class="test_content_title">
+									<!--主题的名称-->
+									<h1 th:text="${subject.getTrainName()}" align="center"></h1>
+									<!--主题id  显示隐藏 获取用-->
+									<h3 th:text="${subject.getId()}"  style="display:none;" id="subjectId"></h3>
+								</div>
+							</div>
+							<div class="test_content_nr" >
+								<ul>
+									
+										<li id="qu_0_0">
+											<div class="test_content_nr_tt">
+												<i>1</i><font>在生产管理信息系统中，下列操作步骤能正确将工单推进流程的是（  ）</font>
+											</div>
+
+											<div class="test_content_nr_main">
+												<ul>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer1"
+																	id="0_answer_1_option_1" value="10"
+																/>
+															
+															
+															<label for="0_answer_1_option_1">
+																A.
+																<p class="ue" style="display: inline;">非常满意</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer1"
+																	id="0_answer_1_option_2"  value="8"
+																/>
+															
+															
+															<label for="0_answer_1_option_2">
+																B.
+																<p class="ue" style="display: inline;">满意</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer1"
+																	id="0_answer_1_option_3" value="5"
+																/>
+															
+															
+															<label for="0_answer_1_option_3">
+																C.
+																<p class="ue" style="display: inline;">一般</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer1"
+																	id="0_answer_1_option_4"  value="2"
+																/>
+															
+															
+															<label for="0_answer_1_option_4">
+																D.
+																<p class="ue" style="display: inline;">不满意</p>
+															</label>
+														</li>
+													
+												</ul>
+											</div>
+										</li>
+									
+										<li id="qu_0_1">
+											<div class="test_content_nr_tt">
+												<i>2</i><font>在营销系统中查询客户有无欠费、余额及抄表数据接待客户时应做到哪些最基本的礼仪？</font>
+											</div>
+
+											<div class="test_content_nr_main">
+												<ul>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer2"
+																	id="0_answer_2_option_1" value="10"
+																/>
+															
+															
+															<label for="0_answer_2_option_1">
+																A.
+																<p class="ue" style="display: inline;">非常满意</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer2"
+																	id="0_answer_2_option_2" value="8"
+																/>
+															
+															
+															<label for="0_answer_2_option_2">
+																B.
+																<p class="ue" style="display: inline;">满意</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer2"
+																	id="0_answer_2_option_3" value="5"
+																/>
+															
+															
+															<label for="0_answer_2_option_3">
+																C.
+																<p class="ue" style="display: inline;">一般</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer2"
+																	id="0_answer_2_option_4" value="2"
+																/>
+															
+															
+															<label for="0_answer_2_option_4">
+																D.
+																<p class="ue" style="display: inline;">不满意</p>
+															</label>
+														</li>
+													
+												</ul>
+											</div>
+										</li>
+									
+										<li id="qu_0_2">
+											<div class="test_content_nr_tt">
+												<i>3</i><font>请在下列选项中选择正确进入电力营销系统网址</font>
+											</div>
+
+											<div class="test_content_nr_main">
+												<ul>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer3"
+																	id="0_answer_3_option_1" value="10"
+																/>
+															
+															
+															<label for="0_answer_3_option_1">
+																A.
+																<p class="ue" style="display: inline;">非常满意</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer3"
+																	id="0_answer_3_option_2" value="8"
+																/>
+															
+															
+															<label for="0_answer_3_option_2">
+																B.
+																<p class="ue" style="display: inline;">满意</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer3"
+																	id="0_answer_3_option_3" value="5"
+																/>
+															
+															
+															<label for="0_answer_3_option_3">
+																C.
+																<p class="ue" style="display: inline;">一般</p>
+															</label>
+														</li>
+
+													<li class="option">
+
+														<input type="radio" class="radioOrCheck" name="answer3"
+															   id="0_answer_3_option_4" value="2"
+														/>
+
+
+														<label for="0_answer_3_option_4">
+															D.
+															<p class="ue" style="display: inline;">不满意</p>
+														</label>
+													</li>
+													
+												</ul>
+											</div>
+										</li>
+									
+										<li id="qu_0_3">
+											<div class="test_content_nr_tt">
+												<i>4</i><font>如何在电力营销系统查询出客户的是否有余额</font>
+											</div>
+
+											<div class="test_content_nr_main">
+												<ul>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer4"
+																	id="0_answer_4_option_1" value="10"
+																/>
+															
+															
+															<label for="0_answer_4_option_1">
+																A.
+																<p class="ue" style="display: inline;">非常满意</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer4"
+																	id="0_answer_4_option_2" value="8"
+																/>
+															
+															
+															<label for="0_answer_4_option_2">
+																B.
+																<p class="ue" style="display: inline;">满意</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer4"
+																	id="0_answer_4_option_3" value="5"
+																/>
+															
+															
+															<label for="0_answer_4_option_3">
+																C.
+																<p class="ue" style="display: inline;">一般</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer4"
+																	id="0_answer_4_option_4" value="2"
+																/>
+															
+															
+															<label for="0_answer_4_option_4">
+																D.
+																<p class="ue" style="display: inline;">不满意</p>
+															</label>
+														</li>
+													
+												</ul>
+											</div>
+										</li>
+									
+										<li id="qu_0_4">
+											<div class="test_content_nr_tt">
+												<i>5</i><font>检查、使用万用表,用万用表测量一小型加工厂线电压为351V，请问其电压是否合格（  ）</font>
+											</div>
+
+											<div class="test_content_nr_main">
+												<ul>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer5"
+																	id="0_answer_5_option_1" value="10"
+																/>
+															
+															
+															<label for="0_answer_5_option_1">
+																A.
+																<p class="ue" style="display: inline;">非常满意</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer5"
+																	id="0_answer_5_option_2" value="8"
+																/>
+															
+															
+															<label for="0_answer_5_option_2">
+																B.
+																<p class="ue" style="display: inline;">满意</p>
+															</label>
+														</li>
+
+													<li class="option">
+
+														<input type="radio" class="radioOrCheck" name="answer5"
+															   id="0_answer_5_option_3" value="5"
+														/>
+
+
+														<label for="0_answer_5_option_3">
+															C.
+															<p class="ue" style="display: inline;">一般</p>
+														</label>
+													</li>
+
+													<li class="option">
+
+														<input type="radio" class="radioOrCheck" name="answer5"
+															   id="0_answer_5_option_4" value="2"
+														/>
+
+
+														<label for="0_answer_5_option_4">
+															D.
+															<p class="ue" style="display: inline;">不满意</p>
+														</label>
+													</li>
+													
+												</ul>
+											</div>
+										</li>
+									
+										<li id="qu_0_5">
+											<div class="test_content_nr_tt">
+												<i>6</i><font>检查、使用万用表,用万用表测量一小型加工厂线电压为415V，请问其电压是否合格（  ）</font>
+											</div>
+
+											<div class="test_content_nr_main">
+												<ul>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer6"
+																	id="0_answer_6_option_1" value="10"
+																/>
+															
+															
+															<label for="0_answer_6_option_1">
+																A.
+																<p class="ue" style="display: inline;">非常满意</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer6"
+																	id="0_answer_6_option_2" value="8"
+																/>
+															
+															
+															<label for="0_answer_6_option_2">
+																B.
+																<p class="ue" style="display: inline;">满意</p>
+															</label>
+														</li>
+
+													<li class="option">
+
+														<input type="radio" class="radioOrCheck" name="answer6"
+															   id="0_answer_6_option_3" value="5"
+														/>
+
+
+														<label for="0_answer_6_option_3">
+															C.
+															<p class="ue" style="display: inline;">一般</p>
+														</label>
+													</li>
+
+													<li class="option">
+
+														<input type="radio" class="radioOrCheck" name="answer6"
+															   id="0_answer_6_option_4" value="2"
+														/>
+
+
+														<label for="0_answer_6_option_4">
+															D.
+															<p class="ue" style="display: inline;">不满意</p>
+														</label>
+													</li>
+													
+												</ul>
+											</div>
+										</li>
+									
+										<li id="qu_0_6">
+											<div class="test_content_nr_tt">
+												<i>7</i>><font>万用表使用完毕后，应将转换开关调至（  ）</font>
+											</div>
+
+											<div class="test_content_nr_main">
+												<ul>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer7"
+																	id="0_answer_7_option_1" value="10"
+																/>
+															
+															
+															<label for="0_answer_7_option_1">
+																A.
+																<p class="ue" style="display: inline;">非常满意</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer7"
+																	id="0_answer_7_option_2" value="8"
+																/>
+															
+															
+															<label for="0_answer_7_option_2">
+																B.
+																<p class="ue" style="display: inline;">满意</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer7"
+																	id="0_answer_7_option_3" value="5"
+																/>
+															
+															
+															<label for="0_answer_7_option_3">
+																C.
+																<p class="ue" style="display: inline;">一般</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer7"
+																	id="0_answer_7_option_4" value="2"
+																/>
+															
+															
+															<label for="0_answer_7_option_4">
+																D.
+																<p class="ue" style="display: inline;">不满意</p>
+															</label>
+														</li>
+													
+												</ul>
+											</div>
+										</li>
+									
+										<li id="qu_0_7">
+											<div class="test_content_nr_tt">
+												<i>8</i><font>钳形电流表的检查、使用方法,如何判断钳形电流表电池电量充足（  ）</font>
+											</div>
+
+											<div class="test_content_nr_main">
+												<ul>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer8"
+																	id="0_answer_8_option_1" value="10"
+																/>
+															
+															
+															<label for="0_answer_8_option_1">
+																A.
+																<p class="ue" style="display: inline;">非常满意</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer8"
+																	id="0_answer_8_option_2" value="8"
+																/>
+															
+															
+															<label for="0_answer_8_option_2">
+																B.
+																<p class="ue" style="display: inline;">满意</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer8"
+																	id="0_answer_8_option_3" value="5"
+																/>
+															
+															
+															<label for="0_answer_8_option_3">
+																C.
+																<p class="ue" style="display: inline;">一般</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer8"
+																	id="0_answer_8_option_4" value="2"
+																/>
+															
+															
+															<label for="0_answer_8_option_4">
+																D.
+																<p class="ue" style="display: inline;">不满意</p>
+															</label>
+														</li>
+													
+												</ul>
+											</div>
+										</li>
+									
+										<li id="qu_0_8">
+											<div class="test_content_nr_tt">
+												<i>9</i><font>钳形电流表的检查、使用方法,钳形电流表使用完毕后，应将转换开关调至（  ）</font>
+											</div>
+
+											<div class="test_content_nr_main">
+												<ul>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer9"
+																	id="0_answer_9_option_1" value="10"
+																/>
+															
+															
+															<label for="0_answer_9_option_1">
+																A.
+																<p class="ue" style="display: inline;">非常满意</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer9"
+																	id="0_answer_9_option_2" value="8"
+																/>
+															
+															
+															<label for="0_answer_9_option_2">
+																B.
+																<p class="ue" style="display: inline;">满意</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer9"
+																	id="0_answer_9_option_3" value="5"
+																/>
+															
+															
+															<label for="0_answer_9_option_3">
+																C.
+																<p class="ue" style="display: inline;">一般</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer9"
+																	id="0_answer_9_option_4" value="2"
+																/>
+															
+															
+															<label for="0_answer_9_option_4">
+																D.
+																<p class="ue" style="display: inline;">不满意</p>
+															</label>
+														</li>
+													
+												</ul>
+											</div>
+										</li>
+									
+										<li id="qu_0_9">
+											<div class="test_content_nr_tt">
+												<i>10</i><font>灭火器的检查、使用方法,下列不属于灭火器的日常检查主要有（  ）</font>
+											</div>
+
+											<div class="test_content_nr_main">
+												<ul>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer10"
+																	id="0_answer_10_option_1" value="10"
+																/>
+															
+															
+															<label for="0_answer_10_option_1">
+																A.
+																<p class="ue" style="display: inline;">非常满意</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer10"
+																	id="0_answer_10_option_2" value="8"
+																/>
+															
+															
+															<label for="0_answer_10_option_2">
+																B.
+																<p class="ue" style="display: inline;">满意</p>
+															</label>
+														</li>
+													
+														<li class="option">
+															
+																<input type="radio" class="radioOrCheck" name="answer10"
+																	id="0_answer_10_option_3" value="5"
+																/>
+															
+															
+															<label for="0_answer_10_option_3">
+																C.
+																<p class="ue" style="display: inline;">一般</p>
+															</label>
+														</li>
+													<li class="option">
+
+														<input type="radio" class="radioOrCheck" name="answer10"
+															   id="0_answer_10_option_4" value="2"
+														/>
+
+
+														<label for="0_answer_10_option_4">
+															D.
+															<p class="ue" style="display: inline;">不满意</p>
+														</label>
+													</li>
+													
+												</ul>
+											</div>
+										</li>
+								</ul>
+							</div>
+
+
+
+						
+					<!--</form>-->
+				</div>
+
+			</div>
+
+		</div>
+		<!--nr end-->
+		<div class="foot"></div>
+	</div>
+</body>
+
+</html>

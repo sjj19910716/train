@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>主题内容</title>
+</head>
+<link rel="stylesheet" href="../web/css/bootstrap.css">
+<script src="../web/js/jquery-3.4.1.min.js"></script>
+<body>
+
+    <div class="container" align="center">
+        <!--主题的名称-->
+        <h1 th:text=" '本次内容:'+ ${subject.getTrainName()}" align="center"></h1>
+        <!--主题id  显示隐藏 获取用-->
+        <h3 th:text="${subject.getId()}"  style="display:none;"></h3>
+    </div>
+
+</body>
+</html>
